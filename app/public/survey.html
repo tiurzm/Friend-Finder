@@ -4,19 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>FriendFinder</title>
-
-  <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Keep in your notes -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  <!-- Chosen -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <!-- Keep ipn your notes -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
 </head>             
 
 <body>
@@ -37,8 +28,8 @@
 
     <p class="lead m-0">Question 1</p>
     <p class="lead m-0">Your mind is always buzzing with unexplored ideas and plans.</p>
-    <select class="chosen-select" id="q1">
-      <option value=""></option>
+    <select class="chosen" id="q1">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -49,8 +40,8 @@
     <br>
     <p class="lead m-0">Question 2</p>
     <p class="lead m-0">Generally speaking, you rely more on your experience than your imagination.</p>
-    <select class="chosen-select" id="q2">
-      <option value=""></option>
+    <select class="chosen" id="q2">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -61,8 +52,8 @@
     <br>
     <p class="lead m-0">Question 3</p>
     <p class="lead m-0">You find it easy to stay relaxed and focused even when there is some pressure.</p>
-    <select class="chosen-select" id="q3">
-      <option value=""></option>
+    <select class="chosen" id="q3">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -73,8 +64,8 @@
     <br>
     <p class="lead m-0">Question 4</p>
     <p class="lead m-0">You rarely do something just out of sheer curiosity.</p>
-    <select class="chosen-select" id="q4">
-      <option value=""></option>
+    <select class="chosen" id="q4">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -85,8 +76,8 @@
     <br>
     <p class="lead m-0">Question 5</p>
     <p class="lead m-0">People can rarely upset you.</p>
-    <select class="chosen-select" id="q5">
-      <option value=""></option>
+    <select class="chosen" id="q5">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -97,8 +88,8 @@
     <br>
     <p class="lead m-0">Question 6</p>
     <p class="lead m-0">It is often difficult for you to relate to other people’s feelings.</p>
-    <select class="chosen-select" id="q6">
-      <option value=""></option>
+    <select class="chosen" id="q6">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -109,8 +100,8 @@
     <br>
     <p class="lead m-0">Question 7</p>
     <p class="lead m-0">In a discussion, truth should be more important than people’s sensitivities.</p>
-    <select class="chosen-select" id="q7">
-      <option value=""></option>
+    <select class="chosen" id="q7">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -121,8 +112,8 @@
     <br>
     <p class="lead m-0">Question 8</p>
     <p class="lead m-0">You rarely get carried away by fantasies and ideas.</p>
-    <select class="chosen-select" id="q8">
-      <option value=""></option>
+    <select class="chosen" id="q8">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -133,8 +124,8 @@
     <br>
     <p class="lead m-0">Question 9</p>
     <p class="lead m-0">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
-    <select class="chosen-select" id="q9">
-      <option value=""></option>
+    <select class="chosen" id="q9">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -145,8 +136,8 @@
     <br>
     <p class="lead m-0">Question 10</p>
     <p class="lead m-0">You feel more energetic after spending time with a group of people.</p>
-    <select class="chosen-select" id="q10">
-      <option value=""></option>
+    <select class="chosen" id="q10">
+      <option value="">Select Option</option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -188,27 +179,6 @@
   </div>
 
   <script type="text/javascript">
-    // Chosen CSS
-    let config = {
-      ".chosen-select": {},
-      ".chosen-select-deselect": {
-        allow_single_deselect: true
-      },
-      ".chosen-select-no-single": {
-        disable_search_threshold: 10
-      },
-      ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
-      },
-      ".chosen-select-width": {
-        width: "95%"
-      }
-    };
-
-    for (let selector in config) {
-      $(selector).chosen(config[selector]);
-    }
-
     // Capture the form inputs
     $("#submit").on("click", function(event) {
       event.preventDefault();
@@ -222,7 +192,7 @@
           }
         });
 
-        $(".chosen-select").each(function() {
+        $(".chosen").each(function() {
 
           if ($(this).val() === "") {
             isValid = false;

@@ -1,6 +1,6 @@
 # Friend-Finder
 
-This is an application that finds you a new friend by taking some survey, built using express.
+This is an application that finds you a new friend by taking a survey that was built using express.
 
 ![Home Page](./app/public/img/home.png)
 
